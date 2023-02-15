@@ -1,0 +1,194 @@
+body{
+    background-color: #fff5ce;
+}
+p.iv{
+font-size: 12pt;
+    color: #ae83d6;
+    font-weight: bold;
+    text-align: right;
+    width:100%;
+    font-family: sans-serif;
+    margin:30px 0px;
+}
+
+p.tf{
+font-size: 12pt;
+    width:100%;
+    font-family: sans-serif;
+    color: #ae83d6;
+    margin:30px 0px;
+}
+
+p.quote{
+
+    text-align: center;
+    font-size: 15pt;
+     font-family: sans-serif;
+    font-style: italic;
+    color: #ae83d6;
+    margin: 50px 50px;
+}
+
+p.note{
+color: #ae83d6;
+    width:100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 100px 0px;
+}
+
+
+li {
+  display: inline;
+}
+li {
+  float: left;
+    font-family: sans-serif;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #ae83d6;
+}
+ul {
+  background-color: #ae83d6;
+    position: fixed;
+     top: 10px;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ae83d6;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fff5ce;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.title {
+  display: block;
+  color: #fff5ce;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #986dc2;
+}
+li {
+  border-left: 1px solid #986dc2;
+}
+
+li:last-child {
+  border-left: none;
+}
+.dropdown {
+  position: fixed;
+    z-index: 1;
+    top:15px;
+    left:150px;
+  display: inline-block;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: fixed;
+  left: -100vw;
+}
+
+.dropdown > label,
+.dropdown > a[role="button"] {
+  display: inline-block;
+  padding: 6px 15px;
+  color: #333;
+  line-height: 1.5em;
+  text-decoration: none;
+  border: 1px solid #8c8c8c;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color: #333;
+}
+
+.dropdown > label:after,
+.dropdown > a[role="button"]:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.dropdown > ul {
+  position: fixed;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  border: 1px solid #8c8c8c;
+  background: #fff;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+  background: #ececec;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > ul:target ~ a:after {
+  content: "\f0d8";
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
